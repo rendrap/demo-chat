@@ -7020,17 +7020,6 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-:root {
-  --theme-primary: #6200ee;
-  --theme-primary--light: rgba(98, 0, 238, 0.04);
-  --theme-on-primary: #ffffff;
-  --theme-secondary: #018786;
-  --theme-on-secondary: #ffffff;
-  --theme-surface: #ffffff;
-  --theme-on-surface: #000000;
-  --theme-background: #ffffff;
-  --theme-on-background: #000000; }
-
 body {
   background-color: #3498db;
   -webkit-font-smoothing: antialiased;
@@ -7099,7 +7088,7 @@ input {
     background: #eee; }
   .friend-drawer .text {
     margin-left: 12px;
-    width: 70%; }
+    width: 90%; }
     .friend-drawer .text h6 {
       margin-top: 6px;
       margin-bottom: 0; }
@@ -7152,7 +7141,7 @@ hr {
   100% {
     opacity: 1; } }
 
-.offset-md-9 .chat-bubble {
+.flex-row-reverse .chat-bubble {
   background: #74b9ff;
   color: #fff; }
 

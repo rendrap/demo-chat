@@ -64,34 +64,34 @@
 "messages" :
 [
   {
-  "text":"Hey dude!",
+  "text":"Hey girl!",
   "position":"left"
   },
   {
-  "text":"Hey dude!",
+  "text":"Hi, It's been a while. How are you doing?",
+  "position":"left"
+  },
+  {
+  "text":"Do I know you? Are you real?",
+  "position":"right",
+  "reverse": "flex-row-reverse"
+  },
+  {
+  "text":"This is me, we met at strarbook angkringan",
+  "position":"left"
+  },
+  {
+  "text":"You don't remember me do you?",
+  "position":"left"
+  },
+  {
+  "text":"It's me Thomas, the guy with the wierd hair",
   "position":"left"
   },
   {
   "text":"Hey dude!",
   "position":"right",
-  "offset": "offset-md-9"
-  },
-  {
-  "text":"Hey dude!",
-  "position":"left"
-  },
-  {
-  "text":"Hey dude!",
-  "position":"left"
-  },
-  {
-  "text":"Hey dude!",
-  "position":"left"
-  },
-  {
-  "text":"Hey dude!",
-  "position":"right",
-  "offset": "offset-md-9"
+  "reverse": "flex-row-reverse"
   },
   {
   "text":"Hey kamu!",
@@ -100,7 +100,7 @@
   {
   "text":"Hey dude!",
   "position":"right",
-  "offset": "offset-md-9"
+  "reverse": "flex-row-reverse"
   },
   {
   "text":"Hey dude!",
@@ -117,7 +117,7 @@
   {
   "text":"Hey dude!",
   "position":"right",
-  "offset": "offset-md-9"
+  "reverse": "flex-row-reverse"
   },
   {
   "text":"Hey kamu!",

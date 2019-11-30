@@ -49,43 +49,7 @@
                         </span>
                     </div>
                 </div>
-                <div id="right-panel" class="chat-panel ps-container ps-theme-default ps-active-y">
-                    <div class="row no-gutters">
-                        <div class="col-md-3">
-                            <div class="chat-bubble chat-bubble--left">
-                                Hello dude!
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row no-gutters">
-                        <div class="col-md-3 offset-md-9">
-                            <div class="chat-bubble chat-bubble--right">
-                                Hello dude!
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row no-gutters">
-                        <div class="col-md-3 offset-md-9">
-                            <div class="chat-bubble chat-bubble--right">
-                                Hello dude!
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row no-gutters">
-                        <div class="col-md-3">
-                            <div class="chat-bubble chat-bubble--left">
-                                Hello dude!
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row no-gutters">
-                        <div class="col-md-3 offset-md-9">
-                            <div class="chat-bubble chat-bubble--right">
-                                Hello dude!
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div id="right-panel" class="chat-panel ps-container ps-theme-default ps-active-y"></div>
             </div>
         </div>
     </div>
@@ -104,10 +68,8 @@
     </script>
     <script id="template-right" type="x-tmpl-mustache">
         {{#messages}}
-        <div class="row no-gutters">
-            <div class="col-md-3 {{offset}}">
-                <div class="chat-bubble chat-bubble--{{position}}">{{text}}</div>
-            </div>
+        <div class="row no-gutters {{reverse}}">
+            <div class="chat-bubble chat-bubble--{{position}}">{{text}}</div>
         </div>
         {{/messages}}
         <div class="row abs-bottom">
