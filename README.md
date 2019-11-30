@@ -4,6 +4,7 @@ Banyak yg belum di optimasi untuk demo kali ini, dikarenakan keterbatasan waktu 
 3. Belum di optimasi performancenya (no critical path CSS, image min, minifikasi html, CSS, & js, concat js and CSS) (major).
 4. Belum di optimasi aset yg perlu di pre-load. (minor).
 5. SVG masih menggunakan material icon secara keseluruhan, belum di extract satu persatu yg hanya digunakan dan di-sprite kan (dijadikan satu).(minor).
+6. Belum di test di iOS, MacOS, & safari.
 
 Next step : dark mode!
 
