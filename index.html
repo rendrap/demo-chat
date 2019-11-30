@@ -6,17 +6,146 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Hello, world!</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <title>Chat app demo!</title>
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <div class="container small-margin">
+        <div class="row no-gutters">
+            <div class="left-section col-md-4 border-right">
+                <div class="open-panel"><i class="material-icons">keyboard_arrow_right</i></div>
+                <div class="settings-tray">
+                    <img class="profile-image" src="assets/images/prime.jpg" alt="Profile img">
+                    <span class="settings-tray--right">
+                        <i class="material-icons">cached</i>
+                        <i class="material-icons">message</i>
+                        <i class="material-icons">menu</i>
+                    </span>
+                </div>
+                <div class="search-box">
+                    <div class="input-wrapper">
+                        <i class="material-icons">search</i>
+                        <input placeholder="Search here" type="text">
+                    </div>
+                </div>
+                <!-- Start mustache template -->
+                <div id="left-panel" class="ps-container ps-theme-default ps-active-y"></div>
+                <!-- End mustache template -->
+
+            </div>
+            <div class="col">
+                <div class="settings-tray">
+                    <div class="friend-drawer no-gutters friend-drawer--grey">
+                        <img class="profile-image" src="assets/images/3.jpg" alt="">
+                        <div class="text">
+                            <h6>Selena</h6>
+                            <p class="text-muted">Ad astra per aspera</p>
+                        </div>
+                        <span class="settings-tray--right">
+                            <i class="material-icons">menu</i>
+                        </span>
+                    </div>
+                </div>
+                <div id="right-panel" class="chat-panel ps-container ps-theme-default ps-active-y">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <div class="chat-bubble chat-bubble--left">
+                                Hello dude!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-md-3 offset-md-9">
+                            <div class="chat-bubble chat-bubble--right">
+                                Hello dude!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-md-3 offset-md-9">
+                            <div class="chat-bubble chat-bubble--right">
+                                Hello dude!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <div class="chat-bubble chat-bubble--left">
+                                Hello dude!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-md-3 offset-md-9">
+                            <div class="chat-bubble chat-bubble--right">
+                                Hello dude!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script id="template-left" type="x-tmpl-mustache">
+        {{#friends}}
+        <div class="friend-drawer friend-drawer--onhover">
+          <img class="profile-image" src="assets/images/{{shortname}}_tn.jpg" alt="Photo of {{name}}">
+          <div class="text">
+              <h6>{{name}}</h6>
+              <p class="text-muted">{{status}}</p>
+          </div>
+          <span class="time text-muted small">{{time}}</span>
+        </div>
+        <hr>
+        {{/friends}}
+    </script>
+    <script id="template-right" type="x-tmpl-mustache">
+        {{#messages}}
+        <div class="row no-gutters">
+            <div class="col-md-3 {{offset}}">
+                <div class="chat-bubble chat-bubble--{{position}}">{{text}}</div>
+            </div>
+        </div>
+        {{/messages}}
+        <div class="row abs-bottom">
+            <div class="col-12">
+                <div class="chat-box-tray">
+                    <i class="material-icons">sentiment_very_satisfied</i>
+                    <input type="text" placeholder="Type your message here...">
+                    <i class="material-icons">mic</i>
+                    <i class="material-icons">send</i>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.1/js/min/perfect-scrollbar.jquery.min.js"></script>
+    <script>
+    $(function() {
+        $.getJSON('data.json', function(data) {
+            var templateLeft = $('#template-left').html();
+            var templateRight = $('#template-right').html();
+            Mustache.parse(templateLeft);
+            Mustache.parse(templateRight);
+            var renderedLeft = Mustache.render(templateLeft, data);
+            var renderedRight = Mustache.render(templateRight, data);
+            $('#left-panel').html(renderedLeft);
+            $('#right-panel').html(renderedRight);
+        }); //getJSON
+    }); //function
+    </script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+    window.addEventListener('load', function(){
+        $('.ps-container').perfectScrollbar();
+    });
+    </script>
 </body>
 
 </html>

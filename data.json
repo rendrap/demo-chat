@@ -1,0 +1,127 @@
+{ "friends" :
+[
+  {
+    "name":"Barot Bellingham",
+    "shortname":"Barot_Bellingham",
+    "time": "13:21",
+    "status":"Hey, you're arrested!"
+  },
+  {
+    "name":"Jonathan G. Ferrar II",
+    "shortname":"Jonathan_Ferrar",
+    "time": "13:11",
+    "status":"Turning coffee into code"
+  },
+  {
+    "name":"Hillary Hewitt",
+    "shortname":"Hillary_Goldwynn",
+    "time": "11:41",
+    "status":"Let's hang out"
+  },
+  {
+    "name":"Hassum Harrod",
+    "shortname":"Hassum_Harrod",
+    "time": "09:45",
+    "status":"I'm not sure..."
+  },
+  {
+    "name":"Jennifer Jerome",
+    "shortname":"Jennifer_Jerome",
+    "time": "08:10",
+    "status":"Entah apa yang merasukimu"
+  },
+  {
+    "name":"LaVonne L. LaRue",
+    "shortname":"LaVonne_LaRue",
+    "time": "06:01",
+    "status":"DJ gagak - kuakk"
+  },
+  {
+    "name":"Riley Rewington",
+    "shortname":"Riley_Rewington",
+    "time": "16:51",
+    "status":"Playing games"
+  },
+  {
+    "name":"Xhou Ta",
+    "shortname":"Xhou_Ta",
+    "time": "09:45",
+    "status":"I'm not sure..."
+  },
+  {
+    "name":"Sugeng",
+    "shortname":"1",
+    "time": "06:10",
+    "status":"Lucky luck"
+  },
+  {
+    "name":"Binomo",
+    "shortname":"2",
+    "time": "05:01",
+    "status":"Djutaan orang tidak me..."
+  }
+],
+"messages" :
+[
+  {
+  "text":"Hey dude!",
+  "position":"left"
+  },
+  {
+  "text":"Hey dude!",
+  "position":"left"
+  },
+  {
+  "text":"Hey dude!",
+  "position":"right",
+  "offset": "offset-md-9"
+  },
+  {
+  "text":"Hey dude!",
+  "position":"left"
+  },
+  {
+  "text":"Hey dude!",
+  "position":"left"
+  },
+  {
+  "text":"Hey dude!",
+  "position":"left"
+  },
+  {
+  "text":"Hey dude!",
+  "position":"right",
+  "offset": "offset-md-9"
+  },
+  {
+  "text":"Hey kamu!",
+  "position":"left"
+  },
+  {
+  "text":"Hey dude!",
+  "position":"right",
+  "offset": "offset-md-9"
+  },
+  {
+  "text":"Hey dude!",
+  "position":"left"
+  },
+  {
+  "text":"Hey dude!",
+  "position":"left"
+  },
+  {
+  "text":"Hey dude!",
+  "position":"left"
+  },
+  {
+  "text":"Hey dude!",
+  "position":"right",
+  "offset": "offset-md-9"
+  },
+  {
+  "text":"Hey kamu!",
+  "position":"left"
+  }
+]
+}
